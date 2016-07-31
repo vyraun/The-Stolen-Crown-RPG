@@ -37,15 +37,13 @@ This took some time, but I think, now that it's coming to an end, a good learnin
 
 I want to thank those who kindly took their time to suggest ideas.
 
-> It turns out that the libpng and libjpeg that are in Anaconda are not appropriate for pygame. This I found out from a post in their page.
-
 This kind of thing (which I've also seen with Anaconda's Qt libraries under Linux) is why I tend to avoid it, though I know quite a few people are happy with it, and it's nice to have something consistent across platforms with pre-built binaries, which I think is a USP for Anaconda. On OS X/Linux it also avoids installations into /usr/local (or worse /usr) and doesn't require sudo, which is good for centrally managed systems.
 
 This comes from the Anaconda support help that I got. I cannot take credit for this solution, only for seeking it out and passing it on!
 
-brew install sdl sdl_image sdl_mixer sdl_ttf portmidi 
+> brew install sdl sdl_image sdl_mixer sdl_ttf portmidi 
 
-conda install -c https://conda.binstar.org/quasiben pygame 
+> conda install -c https://conda.binstar.org/quasiben pygame 
 
 There apparently is some issue between the libjpeg and libpng that comes with anaconda (where is it run) and those that you will compile with if you compile pygame, as I did many times. The conda install command actually will install a pygame that was compiled to work with those libraries in anaconda so that when you actually run things, you will get the extended image support.
 	
