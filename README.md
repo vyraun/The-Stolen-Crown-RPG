@@ -28,9 +28,9 @@ Victory Theme by matthew.pablo http://opengameart.org/content/enchanted-festival
 
 Tried:
 
->>> import pygame
->>> pygame.image.get_extended()
-0
+> import pygame
+> pygame.image.get_extended()
+> 0
 
 
 http://pygame-users.25799.x6.nabble.com/pygame-image-get-extended-0-Tried-everything-should-I-just-give-up-td1854.html
